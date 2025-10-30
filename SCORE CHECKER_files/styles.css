@@ -1,0 +1,112 @@
+/* Ensure html and body take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Create a flex container for the page */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style adjustments for the navbar */
+.navbar {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+}
+/* Ensure the main container doesn't clash with the navbar */
+.container {
+    padding-top: 20px;
+    max-width: 100%;
+}
+
+/* Main content should take up available space */
+main {
+    flex: 1;
+    text-align: center;
+}
+
+.google-login-button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.google-login-button img {
+    width: 290px; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle; /* Aligns image vertically */
+}
+
+.google-login-button img:hover {
+    opacity: 0.8; /* Add a slight effect on hover */
+}
+
+
+
+/* Flex container for the login section */
+.login-container {
+    display: flex;
+    flex-direction: column; /* Stack titles and button vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    position: absolute; /* Use absolute positioning to place it in the center */
+    top: 50%; /* Position container at the middle vertically */
+    left: 50%; /* Position container at the middle horizontally */
+    transform: translate(-50%, -50%); /* Adjust to truly center */
+    text-align: center; /* Optional, for centering text */
+}
+
+
+/* Title container styling */
+.title-container {
+    text-align: center; /* Center align text */
+    margin-bottom: 1rem; /* Space between title and button */
+}
+
+/* Logo styling */
+.iitm-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0.2rem; /* Space between logo and title */
+    margin-right: 0.5rem;
+  
+}
+
+/* IIT Madras styling */
+.iit-madras {
+    font-size: 2rem; /* Larger size for IIT Madras */
+    margin-top: 12rem;
+    margin-bottom: 0rem;
+}
+
+/* Online Degree styling */
+.online-degree {
+    font-size: 1.2rem; /* Smaller size for Online Degree */
+    margin-top: 0rem;
+}
+
+
+.nav-link {
+    color: white !important;
+    font-size: 20px;
+}
+
+.pagination-container {
+    display: flex;
+    
+    justify-content: center;
+}
+
+    /* Ensure long file names are truncated */
+    .file-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+/* Highlight rows with modifications */
+.highlight-row {
+    background-color:yellow !important;/* Change to any color you prefer */
+}
